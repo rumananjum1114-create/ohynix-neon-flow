@@ -47,7 +47,6 @@ export function ContactForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        mode: "no-cors",
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
@@ -57,6 +56,11 @@ export function ContactForm() {
           source: "Ohynix Website Contact Form",
         }),
       });
+
+      // Check if the request was successful
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
       setIsSuccess(true);
       setFormData({ name: "", email: "", company: "", message: "" });
