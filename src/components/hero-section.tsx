@@ -9,13 +9,18 @@ export function HeroSection() {
       <div className="container mx-auto px-6 text-center z-10">
         {/* Animated Logo */}
         <div className="mb-8 flex justify-center">
-          <div className="relative">
+          <div className="relative group cursor-pointer">
             <img 
               src={ohynixLogo} 
               alt="Ohynix AI Agency Logo" 
-              className="h-32 w-auto animate-float filter drop-shadow-2xl"
+              className="h-32 w-auto animate-float filter drop-shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_50px_rgba(59,130,246,0.8)]"
             />
-            <div className="absolute inset-0 animate-pulse-glow rounded-full blur-xl opacity-30 bg-primary"></div>
+            <div className="absolute inset-0 animate-pulse-glow rounded-full blur-xl opacity-50 bg-gradient-to-r from-primary via-secondary to-accent"></div>
+            <div className="absolute inset-0 rounded-full blur-2xl opacity-0 group-hover:opacity-70 bg-gradient-to-r from-primary/50 via-secondary/50 to-accent/50 transition-opacity duration-500"></div>
+            {/* Sparkle effects */}
+            <div className="absolute -top-2 -right-2 w-4 h-4 bg-primary rounded-full animate-ping opacity-75"></div>
+            <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-secondary rounded-full animate-ping opacity-75 delay-500"></div>
+            <div className="absolute top-1/2 -right-4 w-2 h-2 bg-accent rounded-full animate-pulse delay-1000"></div>
           </div>
         </div>
 
