@@ -15,6 +15,14 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Hero button with neon glow effect
+        hero: "bg-gradient-primary text-primary-foreground hover:shadow-neon-cyan hover:scale-105 transition-all duration-300",
+        // Neon outline button
+        "outline-neon": "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-neon-cyan transition-all duration-300",
+        // Purple neon variant
+        "neon-purple": "bg-gradient-secondary text-secondary-foreground hover:shadow-neon-purple hover:scale-105 transition-all duration-300",
+        // Pink accent variant
+        "neon-pink": "bg-gradient-accent text-accent-foreground hover:shadow-neon-pink hover:scale-105 transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",

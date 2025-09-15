@@ -1,12 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { HeroSection } from "@/components/hero-section";
+import { Navigation } from "@/components/ui/navigation";
+import { Link } from "react-router-dom";
+import ohynixLogo from "@/assets/ohynix-logo.png";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="absolute top-0 left-0 right-0 z-50 w-full">
+        <div className="container mx-auto px-6 py-6">
+          <div className="flex items-center justify-between">
+            <Link to="/" className="flex items-center space-x-3">
+              <img src={ohynixLogo} alt="Ohynix" className="h-8 w-auto" />
+              <span className="text-xl font-bold gradient-text">Ohynix</span>
+            </Link>
+            <Navigation />
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <HeroSection />
     </div>
   );
 };
