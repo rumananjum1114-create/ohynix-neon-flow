@@ -52,10 +52,10 @@ const services = [
     color: "neon-purple",
     services: [
       {
-        title: "Chatbots & Virtual Assistants",
-        description: "24/7 customer support and internal assistance powered by AI",
+        title: "AI Call Agents",
+        description: "Intelligent voice agents for inbound and outbound calls with natural conversation",
         icon: MessageSquare,
-        features: ["Natural Language Processing", "Multi-language Support", "Knowledge Base Integration", "Escalation Handling"]
+        features: ["Natural Voice Processing", "Call Routing & Transfer", "Appointment Scheduling", "Lead Qualification"]
       },
       {
         title: "Research Assistants",
