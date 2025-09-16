@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/hero-section";
+import { ServicesSection } from "@/components/services-section";
 import { Navigation } from "@/components/ui/navigation";
 import { Link } from "react-router-dom";
 import ohynixLogo from "@/assets/ohynix-logo.png";
@@ -28,6 +29,9 @@ const Index = () => {
 
       {/* Hero Section */}
       <HeroSection />
+
+      {/* Services Section */}
+      <ServicesSection />
     </div>
   );
 };
