@@ -13,7 +13,7 @@ export function HeroSection() {
             <img 
               src={ohynixLogo} 
               alt="Ohynix AI Agency Logo" 
-              className="h-32 w-auto animate-float filter drop-shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-[0_0_50px_rgba(59,130,246,0.8)]"
+              className="h-32 w-auto animate-float filter drop-shadow-[0_0_50px_hsl(var(--primary))] transition-all duration-500 group-hover:scale-125 group-hover:drop-shadow-[0_0_80px_hsl(var(--primary))] ring-4 ring-primary/30 ring-offset-4 ring-offset-background/50 rounded-full p-2 bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20"
             />
             <div className="absolute inset-0 animate-pulse-glow rounded-full blur-xl opacity-50 bg-gradient-to-r from-primary via-secondary to-accent"></div>
             <div className="absolute inset-0 rounded-full blur-2xl opacity-0 group-hover:opacity-70 bg-gradient-to-r from-primary/50 via-secondary/50 to-accent/50 transition-opacity duration-500"></div>
